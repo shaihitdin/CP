@@ -1,0 +1,6 @@
+ok Ok
+wrong answer Line 1 - expected: "76", found: "74"
+wrong answer Line 1 - expected: "76446", found: "80176"
+wrong answer Line 1 - expected: "153207", found: "160872"
+wrong answer Line 1 - expected: "229788", found: "241161"
+wrong answer Extra lines! "241161" encountered

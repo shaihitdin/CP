@@ -1,0 +1,10 @@
+wrong answer 1st lines differ - expected: '50', found: '1000000002'
+ok 10 points
+wrong answer 1st lines differ - expected: '19', found: '858993475'
+wrong answer 1st lines differ - expected: '33', found: '613566767'
+wrong answer 1st lines differ - expected: '246', found: '858993523'
+wrong answer 1st lines differ - expected: '932763', found: '1000000002'
+ok 10 points
+wrong answer 1st lines differ - expected: '9948', found: '858998297'
+wrong answer 1st lines differ - expected: '310770', found: '859131912'
+wrong answer 1st lines differ - expected: '8762792', found: '1000000002'
