@@ -76,7 +76,7 @@ int main () {
 		int v = st[++stq];
 		for (int &to : g[v]) {
 			to = gp (to);
-			if (!color[to]) {
+			if (!color[to] && len[to] + 1 == len[v]) {
 			    color[to] = len[to];
 				st[++enq] = to;
 			}
