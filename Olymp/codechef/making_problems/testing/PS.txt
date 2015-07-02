@@ -1,0 +1,5 @@
+12 test file contains 98 subtests because there can be 1000 subtests in file maximum.
+
+rename all notbat files to bat
+rename all notexe files to exe
+(because of gmail security reasons)

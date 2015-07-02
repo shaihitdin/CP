@@ -32,8 +32,10 @@ bool ok(){
    return 1;
 }
 int main(){
+	#ifdef LOCAL
 	freopen("in","r",stdin);
 	freopen("out","w",stdout);
+	#endif
 	scanf("%I64d",&n);
 	if(n==1){	printf("0\n");return 0;}
 	for(int i=1;i<=n;++i)

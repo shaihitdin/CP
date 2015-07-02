@@ -1,0 +1,20 @@
+wrong answer Not enough lines! "387136640" expected
+ok Ok
+wrong answer Line 1 - expected: "69120", found: "62208"
+ok Ok
+wrong answer Line 1 - expected: "749062329", found: "998936882"
+wrong answer Line 1 - expected: "1296", found: "864"
+wrong answer Line 1 - expected: "170647921", found: "709438006"
+wrong answer Line 1 - expected: "9072", found: "7560"
+wrong answer Line 1 - expected: "798243726", found: "285813527"
+ok Ok
+wrong answer Line 1 - expected: "799039396", found: "291996312"
+ok Ok
+wrong answer Line 1 - expected: "87259530", found: "4564778"
+wrong answer Line 1 - expected: "240", found: "216"
+wrong answer Line 1 - expected: "920405949", found: "598299072"
+wrong answer Line 1 - expected: "73741825", found: "207959545"
+wrong answer Line 1 - expected: "873619169", found: "759865157"
+ok Ok
+wrong answer Not enough lines! "815275681" expected
+ok Ok

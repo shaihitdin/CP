@@ -30,16 +30,18 @@ void dfs(int a, int pe=-1) {
 	}
 }
 int main() {
+	#ifdef LOCAL
 	freopen("bridges.in", "r", stdin);
 	freopen("bridges.out", "w", stdout);
+	#endif
 	scanf("%d %d", &n, &m);
 	for(i = 1; i <= m; ++i) {
 		scanf("%d %d", &x, &y);
 		v[y].push_back(mkp(x, i));
 		v[x].push_back(mkp(y, i));
 	}
-	for(i = 1; i <= n; ++i) {
-	  dfs(i);
+	for (int i = 1; i <= n; ++i) {
+		dfs (i);
 	}
 	sort(ans.begin(), ans.end());
 	printf("%d\n", ans.size());

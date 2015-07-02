@@ -49,6 +49,7 @@ int main ()
 		tek++;
 		if (tek > k) tek = 1;
 	}
+
 	cur.setcost();
 	best = cur;
 	int step = 0;	

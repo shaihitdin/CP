@@ -19,9 +19,9 @@ inline void dfs (int v, int pe=-1) {
     	if(a[v][i].S == pe)
     		continue;
     	int to = a[v][i].F;
-    	if (tin[to])
+    	if (tin[to]) {
     		fup[v] = min (tin[to], fup[v]);
-    	else {
+    	} else {
     		dfs (to, a[v][i].S);
     		if (tin[v] < fup[to]) {
     			bridge[a[v][i].S] = 1;
@@ -47,6 +47,7 @@ inline void color (int v, int c = 1) {
 		}	
 	}
 }
+
 int main () {
 	freopen ("in", "r", stdin);
 	freopen ("out", "w", stdout);

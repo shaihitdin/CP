@@ -3,13 +3,8 @@
 using namespace std;
 
 const int N = 1e6 + 1, sz = 1 << 20, inf = 1e9;
+
 int n, k, a[N], ans = inf;
-
-#define mkp make_pair
-#define F first
-#define S second
-
-set <pair <int, int> > s1;
 
 int t[sz + N];
 

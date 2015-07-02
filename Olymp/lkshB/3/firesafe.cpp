@@ -8,7 +8,7 @@ char u[N];
 int l[N],sz,n,m,x,y,i;
 vector<int> g[N],g_rev[N];
 int color[N],clrsz;
-int ans;
+vector <int> ans;
 bool flag[N];
 inline void dfs1(int x){
 	u[x]=1;
@@ -26,8 +26,10 @@ inline void dfs2(int x){
 	}
 }
 int main(){
+	#ifdef LOCAL
 	freopen("in","r",stdin);
 	freopen("out","w",stdout);
+	#endif
 	scanf("%d\n%d",&n,&m);
 	for(i=1;i<=m;++i){
 	  scanf("%d %d",&x,&y);
@@ -45,10 +47,11 @@ int main(){
 	    if(color[i]!=color[g[i][j]])
 	      flag[color[i]]=1;
 	 }
-	for(i=1;i<=clrsz;++i) ((flag[i])? 0 : ++ans);
-	printf("%d\n",ans);
 	for(i=1;i<=n;++i)
-	 cerr<<color[i]<<" ";
-	for(i=1;i<=n;++i)
-	  if(!flag[color[i]]) printf("%d\n",i),flag[color[i]]=1;
-return 0;}
+	  if(!flag[color[i]]) ans.push_back (i), flag[color[i]]=1;
+	
+	printf ("%d\n", ans.size ());
+	for (auto v : ans)
+		printf ("%d ", v);
+	return 0;
+}

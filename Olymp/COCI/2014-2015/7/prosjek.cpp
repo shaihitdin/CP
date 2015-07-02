@@ -6,7 +6,6 @@ typedef long long ll;
 
 const int N = 3e5 + 1;
 
-ll d[N];
 double ans;
 int n, k;
 
@@ -27,6 +26,8 @@ int main () {
 	#endif
 	scanf ("%d%d", &n, &k);
 	int x;
+	register ll d[N];
+	d[0] = 0;
 	for (int i = 1; i <= n; ++i) {
 		scanf ("%d", &x);
 		d[i] = d[i - 1] + x;

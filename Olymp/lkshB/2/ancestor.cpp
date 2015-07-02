@@ -16,8 +16,10 @@ bool ans(int x,int y){
   return ((tin[x]<tin[y]) & (tout[x]>tout[y]));
 }
 int main(){
+	#ifdef LOCAL
 	freopen("in","r",stdin);
 	freopen("out","w",stdout);
+	#endif
 	scanf("%d",&n);
 	for(i=1;i<=n;++i){
 		scanf("%d",&x);

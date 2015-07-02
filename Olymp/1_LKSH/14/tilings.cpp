@@ -7,10 +7,9 @@ inline bool bit(int mask,int pos){
 long long d[31][1<<16],n,m,nn,i,j,k;
 
 inline long long check(int mask1,int mask2){
-	for(int i=1;i<n;++i){
+	for(int i=1;i<n;++i)
 		if(bit(mask1,i) == bit(mask2,i) && bit(mask1,i-1) == bit(mask2,i-1) && bit(mask1,i) == bit(mask1,i-1))
 			return 0;
-	}
 	return 1;
 }
 int main(){
