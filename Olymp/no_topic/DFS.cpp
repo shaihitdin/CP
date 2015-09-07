@@ -3,6 +3,7 @@
 using namespace std;
 vector<int> a[101];
 int u[101],col[101],color_number=1,i,x,y,n,m,f;
+
 void dfs(int v,int paint) {
 	u[v] = 1;
 	col[v] = paint;
@@ -11,6 +12,7 @@ void dfs(int v,int paint) {
 			dfs(a[v][i], paint);
 	}
 }
+
 int main(){
 	cin >> n >> m;
 	for(i = 1; i <= m; ++i) {

@@ -1,4 +1,3 @@
-using namespace std;
 int TL;
 inline void TLE () {
 	if (TL <= clock() * 1000 / CLOCKS_PER_SEC)

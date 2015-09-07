@@ -25,7 +25,7 @@ double val;
 
 inline void check (const int &pos, const int &lvl, const double &a1, const double &a2) {
 	if (lvl == 3) {
-		if (max (fabs (a1 - mid), fabs (a2 - mid)) < val || (max (fabs (a1 - mid), fabs (a2 - mid)) == val && ((rand()) & 1))) {
+		if (max (fabs (a1 - mid), fabs (a2 - mid)) < val) {
 			val = max (fabs (a1 - mid), fabs (a2 - mid));
 			acc = v1;
 			pos1 = pos;
@@ -57,7 +57,7 @@ int main () {
 			Set[j][a[i][j] - 'X'].insert (i);
 	Left = n;
 	while (Left != 1) {
-		mid = (Left / 2.0);
+		mid = (Left / 3.0);
 		val = 1e18;
 		pos1 = 0;
 		v1.resize (0);
