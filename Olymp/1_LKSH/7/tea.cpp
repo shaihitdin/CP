@@ -31,7 +31,7 @@ inline bool bfs() {
 		for (i = 0; i < (int)v[x].size(); ++i) {
 			int id = v[x][i], to = e[id].y;
 			 if (d[to] == 0 && e[id].flow < e[id].cap)
-			 	d[to] = d[x]+1, q[++enq] = to;
+			 	d[to] = d[x] + 1, q[++enq] = to;
 		}
 	}
 	return d[f] != 0;
@@ -42,7 +42,7 @@ inline long long dfs(long long x, long long flow) {
 	if (!flow) return 0;
 	for (; pos[x] < v[x].size(); ++pos[x]) {
 		int id = v[x][pos[x]], to = e[id].y;
-		if(d[to] == d[x]+1) { 	
+		if(d[to] == d[x] + 1) { 	
 			long long pushed = dfs(to, min(flow, e[id].cap-e[id].flow));
 			if(pushed) {
 				e[id].flow += pushed;

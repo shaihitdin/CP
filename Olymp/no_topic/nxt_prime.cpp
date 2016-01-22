@@ -1,12 +1,14 @@
 #include <iostream>
 #include <stdio.h>
 using namespace std;
-int n;
+typedef long long ll;
+
+ll n;
 int main () {
 	cin >> n;
 	for (;; ++n) {
 		bool flag = 1;
-		for (int i = 2; i * i <= n; ++i) {
+		for (ll i = 2; flag && i * i <= n; ++i) {
 			if (!(n % i))
 				flag = 0;
 		}

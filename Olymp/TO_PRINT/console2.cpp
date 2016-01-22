@@ -52,19 +52,19 @@ int main() {
 				} else {
 						t[t[x].nx[i]].suff = 0;
 						q[endq++] = t[x].nx[i];
-						if(t[t[t[x].nx[i]].suff].flag == 1)
+						if (t[t[t[x].nx[i]].suff].flag == 1)
 							t[t[x].nx[i]].flag = 1;
 				}
 		  	}
 		}
 	}
-	while(getline (cin, s)) {
+	while (getline (cin, s)) {
 		tmp_pos = 0;
 		bool flag = 0;
 		for (i = 0; i < (int)s.size(); ++i) {
 			tmp = int(s[i]) - 32;
 			tmp_pos = t[tmp_pos].nx[tmp];
-			if(t[tmp_pos].flag) {
+			if (t[tmp_pos].flag) {
 				flag = 1;
 				break;
 			}
