@@ -23,7 +23,7 @@ struct node {
 	}
 };
 
-inline int get (node *t, const int &Tl, const int &Tr, const int &l, const int &r) {
+inline int get (node *t, int Tl, int Tr, int l, int r) {
 	if (Tl > r || Tr < l)
 		return 0;
 	if (l <= Tl && Tr <= r)
@@ -106,13 +106,6 @@ int can (int M, int K[]) {
 	sort (K, K + M);
 	flag = 0;
 	int sum = 0;
-	/*
-	for (int i = 0; i < M; ++i) {
-		if (sum + K[i] > n)
-			return 0;
-		sum += K[i];
-	}
-	*/
 	for (int i = 0; i < M; ++i) {
 		if (K[i] != 1)
 			used = set_zero (used, 1, sz, 1, K[i] - 1);

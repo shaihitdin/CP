@@ -6,7 +6,7 @@ typedef long long ll;
 ll n;
 int main () {
 	cin >> n;
-	for (;; ++n) {
+	for (;; ++n) {             	
 		bool flag = 1;
 		for (ll i = 2; flag && i * i <= n; ++i) {
 			if (!(n % i))
